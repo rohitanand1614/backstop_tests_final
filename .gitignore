@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# BackstopJS generated artifacts
+backstop.json
+screenshots/
+html_report/
+
+# Editor configurations
+.vscode/
+
+# OS-specific files (optional)
+.DS_Store
+Thumbs.db

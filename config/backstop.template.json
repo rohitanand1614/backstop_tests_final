@@ -1,0 +1,46 @@
+{
+    "id": "visual_regression_tests",
+    "viewports": [
+      {
+        "name": "desktop",
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "name": "iphone",
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 3,
+        "isMobile": true,
+        "hasTouch": true
+      },
+      {
+        "name": "ipad",
+        "width": 768,
+        "height": 1024,
+        "deviceScaleFactor": 2,
+        "isMobile": true,
+        "hasTouch": true
+      }
+    ],
+    "onReadyScript": "onReady.js",
+    "paths": {
+      "bitmaps_reference": "screenshots/baseline",
+      "bitmaps_test": "screenshots/test",
+      "engine_scripts": "engine_scripts",
+      "html_report": "html_report",
+      "ci_report": "ci_report"
+    },
+    "report": ["browser"],
+    "engine": "playwright",
+    "engineOptions": {
+      "browser": "chromium",
+      "headless": false
+    },
+    "asyncCaptureLimit": 5,
+    "asyncCompareLimit": 50,
+    "debug": false,
+    "debugWindow": false,
+    "scenarios": []
+  }
+  
