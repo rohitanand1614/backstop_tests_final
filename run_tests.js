@@ -18,7 +18,7 @@ const generateBackstopConfig = require('./utils/generateBackstopConfig.js');
 
   // Auto-generate labels (Scenario_1, Scenario_2, etc.)
   const scenarios = scenariosData.map((s, index) => ({
-    Label: `Scenario_${index + 1}`,
+    Label: s.Path.replace(/^\//, '').replace(/[^a-zA-Z0-9_-]/g, '_'),
     FullURL: baseUrl + s.Path
   }));
 
